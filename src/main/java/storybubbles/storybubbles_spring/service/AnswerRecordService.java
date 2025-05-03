@@ -11,7 +11,7 @@ public class AnswerRecordService {
     @Autowired
     private AnswerRecordRepository answerRecordRepository;
 
-    public AnswerRecord addAnswerRecord(AnswerRecord answerRecord){
+    public AnswerRecord createAnswerRecord(AnswerRecord answerRecord){
         return answerRecordRepository.save(answerRecord);
     }
 }

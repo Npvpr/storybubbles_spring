@@ -15,8 +15,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Question {
+  
   @Id
-  private String id;
+  private Long id;
   private String questionText;
   private List<String> choices; // 4 options for story questions
   private int correctAnswerIndex; // e.g., 0 = first choice

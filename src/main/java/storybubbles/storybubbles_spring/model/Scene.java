@@ -1,9 +1,6 @@
 package storybubbles.storybubbles_spring.model;
 
 import java.util.List;
-import java.util.UUID;
-
-import org.hibernate.annotations.UuidGenerator;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -22,8 +19,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Scene {
     @Id
-    @UuidGenerator
-    private UUID id;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "story_id")
