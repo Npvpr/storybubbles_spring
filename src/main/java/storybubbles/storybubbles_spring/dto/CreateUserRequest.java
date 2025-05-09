@@ -1,7 +1,6 @@
 package storybubbles.storybubbles_spring.dto;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
 
@@ -13,9 +12,5 @@ public class CreateUserRequest {
     private String username;
 
     @NotBlank(message = "profileImage URL must not be empty")
-    // @Pattern(
-    //     // regexp = "https?://.+\\.(?:png|jpe?g|gif)$",
-    //     message = "profileImage must be a valid image URL (http(s)://...jpg/png/gif)"
-    // )
     private String profileImage;
 }

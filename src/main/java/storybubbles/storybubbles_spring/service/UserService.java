@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import storybubbles.storybubbles_spring.dto.CreateUserRequest;
 import storybubbles.storybubbles_spring.dto.UserDto;
-import storybubbles.storybubbles_spring.model.AnswerRecord;
 import storybubbles.storybubbles_spring.model.User;
 import storybubbles.storybubbles_spring.repository.UserRepository;
 
@@ -18,9 +17,6 @@ public class UserService {
 
     @Autowired
     private S3Service s3Service;
-
-    @Autowired
-    private AnswerRecordService answerRecordService;
 
     public UserDto createUser(CreateUserRequest request) {
         User savedUser = userRepository.save(new User(request.getUsername(), request.getProfileImage()));
