@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Scene {
     @Id
-    private Long id;
+    private long id;
 
     @ManyToOne
     @JoinColumn(name = "story_id")
