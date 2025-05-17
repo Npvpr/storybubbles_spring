@@ -3,12 +3,13 @@ package storybubbles.storybubbles_spring.model;
 import java.util.List;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -16,20 +17,37 @@ import lombok.NoArgsConstructor;
 @Table(name = "scenes")
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
 public class Scene {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    private String name;
 
     @ManyToOne
     @JoinColumn(name = "story_id")
     private Story story;
 
     private List<String> dialogues;
+    private String dialogueSound;
     private List<String> pictures;
 
-    @OneToOne
-    @JoinColumn(name = "question_id")
-    private Question question;
+    // Cannot make ManyToOne from Question because not all questions are part of a
+    // scene, some are part of the tests
+    @OneToMany
+    private List<Question> questions;
 
+    public Scene(String name, Story story, List<String> dialogues, String dialogueSound, List<String> pictures, List<Question> questions){
+        this.name = name;
+        this.story = story;
+        this.dialogues = dialogues;
+        this.dialogueSound = dialogueSound;
+        this.pictures = pictures;
+        this.questions = questions;
+    }
+
+    // intro and conclusion scenes include no questions
+    public Scene(String name, Story story, List<String> dialogues, String dialogueSound, List<String> pictures){
+        this(name, story, dialogues, dialogueSound, pictures, null);
+    }
 }

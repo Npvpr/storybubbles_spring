@@ -2,34 +2,39 @@ package storybubbles.storybubbles_spring.model;
 
 import java.util.UUID;
 
-import org.hibernate.annotations.UuidGenerator;
-
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Entity
-// SQL is case insensitive
 @Table(name = "answer_records")
 @Getter
-@RequiredArgsConstructor
+@NoArgsConstructor
 public class AnswerRecord {
 
     @Id
-    @UuidGenerator
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    private final int questionId; // Which question was answered?
+    private Long  questionId; // Which question was answered?
 
-    private final int chosenAnswer; // e.g., 3 (for 1-5 surveys) or 2 (for 1-4 story choices)
+    private int chosenAnswer; // e.g., 3 (for 1-5 surveys) or 2 (for 1-4 story choices)
 
     @ManyToOne
     // name can be anything
     @JoinColumn(name = "user_id")
-    private final User user;
+    private User user;
+
+    public AnswerRecord(Long questionId, int chosenAnswer, User user){
+        this.questionId = questionId;
+        this.chosenAnswer = chosenAnswer;
+        this.user = user;
+    }
 
 }

@@ -19,6 +19,8 @@ public class Test {
     @Id
     private long id;
 
+    // Cannot make ManyToOne from Question because not all questions are part of a
+    // test, some are part of the scenes
     @OneToMany
     private List<Question> questions;
 }

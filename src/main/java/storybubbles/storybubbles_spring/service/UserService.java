@@ -31,4 +31,9 @@ public class UserService {
             s3Service.generatePublicUrl(user.getProfileImage())
         );
     }
+
+    public User getUserById(UUID userId){
+        return userRepository.findById(userId)
+        .orElseThrow(() -> new IllegalArgumentException("User not found with ID: " + userId));
+    }
 }

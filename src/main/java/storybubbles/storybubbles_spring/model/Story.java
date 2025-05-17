@@ -18,4 +18,8 @@ public class Story {
 
   private String name;
 
+  private String titleSound;
+  
+  private String bgMusic;
+
 }

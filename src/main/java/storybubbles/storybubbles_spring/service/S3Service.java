@@ -20,7 +20,7 @@ public class S3Service {
     @Value("${aws.s3.bucket-name}")
     private String bucketName;
 
-    private static final String PROFILE_PICS_PREFIX = "";
+    private static final String PROFILE_PICS_PREFIX = "Profile Images/";
 
     public List<String> getAllProfileImageUrls() {
         ListObjectsV2Request request = ListObjectsV2Request.builder()
