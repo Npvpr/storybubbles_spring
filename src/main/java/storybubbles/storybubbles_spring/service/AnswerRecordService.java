@@ -19,6 +19,9 @@ public class AnswerRecordService {
     @Autowired
     private UserService userService;
 
+    // creating answer with user that got from the client/frontend is not a good idea
+    // user could be updated with wrong infos for the existing user
+    // only request userId, check it and save answer for that user
     public AnswerRecord createAnswerRecord(AnswerRecord answerRecord){
         return answerRecordRepository.save(answerRecord);
     }

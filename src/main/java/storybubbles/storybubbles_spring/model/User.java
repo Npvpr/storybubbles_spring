@@ -22,6 +22,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class User {
 
+    // this shouldn't return in json
     private String DEFAULT_PROFILE_IMAGE = "1";
 
     @Id

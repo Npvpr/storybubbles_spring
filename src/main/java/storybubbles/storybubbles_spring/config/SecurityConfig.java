@@ -26,9 +26,9 @@ public class SecurityConfig {
             CorsConfigurationSource source = request -> {
                 CorsConfiguration config = new CorsConfiguration();
                 config.setAllowedOrigins(
-                        List.of("http://localhost:3000", "example.org"));
+                        List.of("http://localhost:3000", "https://storybubbles-next.vercel.app"));
                 config.setAllowedMethods(
-                        List.of("GET", "POST", "PUT", "DELETE"));
+                        List.of("GET", "POST"));
                 config.setAllowedHeaders(List.of("*"));
                 return config;
             };
