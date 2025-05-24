@@ -445,7 +445,8 @@ public class DbInit {
                 sceneRepository.save(new Scene("Milo's Adventure", story1, List.of(
                                 "Milo, the friendly boy, lived in a colorful forest filled with magical creatures.",
                                 "Unlike the other monsters, Milo loved exploring, learning new words, and helping his friends."),
-                                "/sounds/story1/introSound.mp3",
+                                List.of("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene1Sound1.mp3",
+                                "https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene1Sound2.mp3"),
                                 List.of("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Introduction.png")));
 
                 sceneRepository.save(new Scene(
@@ -456,7 +457,10 @@ public class DbInit {
                                                 "He followed the sound and met a crying squirrel named Sammy.",
                                                 "Sammy said he lost his favorite book of words. He had fallen asleep near something with leaves and a book, and when he woke up, the book was gone.",
                                                 "Milo decided to help Sammy find the book."),
-                                "/sounds/story1/scene1.mp3",
+                                List.of("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene2Sound1.mp3",
+                                "https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene2Sound2.mp3",
+                                "https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene2Sound3.mp3",
+                                "https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene2Sound4.mp3"),
                                 List.of("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene1.png"),
                                 List.of(
                                                 questionRepository.save(new Question(
@@ -489,7 +493,8 @@ public class DbInit {
                                 List.of(
                                                 "Milo and Sammy met a wise, talking tree named Tilda.",
                                                 "Tilda knew a lot of words and offered to give them clues to find the book. But first, they needed to solve her riddles."),
-                                "/sounds/story1/scene2.mp3",
+                                List.of("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene3Sound1.mp3",
+                                "https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene3Sound2.mp3"),
                                 List.of("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene2.png"),
                                 List.of(
                                                 questionRepository.save(new Question(
@@ -523,7 +528,8 @@ public class DbInit {
                                 List.of(
                                                 "The next clue led Milo and Sammy to a river.",
                                                 "They had to cross it, but the only way was by completing rhyme challenges given by a playful Fish."),
-                                "/sounds/story1/scene3.mp3",
+                                List.of("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene4Sound1.mp3",
+                                "https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene4Sound2.mp3"),
                                 List.of("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene3.png"),
                                 List.of(
                                                 questionRepository.save(new Question(
@@ -558,7 +564,9 @@ public class DbInit {
                                                 "Finally, Milo and Sammy reached a hidden cave.",
                                                 "Inside, they found the book, guarded by a sleepy dragon who loved stories.",
                                                 "The dragon would only let them take the book if they read him a story about kings and knights."),
-                                "/sounds/story1/scene4.mp3",
+                                List.of("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene5Sound1.mp3",
+                                "https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene5Sound2.mp3",
+                                "https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene5Sound3.mp3"),
                                 List.of("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene4.png"),
                                 List.of(
                                                 questionRepository.save(new Question(
@@ -595,7 +603,11 @@ public class DbInit {
                                                 "Milo (grinning): 'Let’s open it and see what story is inside!'",
                                                 "Sammy flipped open the book… but suddenly, a golden light swirled around them!",
                                                 "The pages glowed, and before they could say another word—WHOOSH!—they were sucked into the book!"),
-                                "/sounds/story1/conclusion.mp3",
+                                List.of("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene6Sound1.mp3",
+                                "https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene6Sound2.mp3",
+                                "https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene6Sound3.mp3",
+                                "https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene6Sound4.mp3",
+                                "https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Scene6Sound5.mp3"),
                                 List.of("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/Conclusion.png")));
 
         }

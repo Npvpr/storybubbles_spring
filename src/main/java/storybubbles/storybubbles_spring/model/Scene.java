@@ -29,7 +29,7 @@ public class Scene {
     private Story story;
 
     private List<String> dialogues;
-    private String dialogueSound;
+    private List<String> dialogueSounds;
     private List<String> pictures;
 
     // Cannot make ManyToOne from Question because not all questions are part of a
@@ -37,17 +37,17 @@ public class Scene {
     @OneToMany
     private List<Question> questions;
 
-    public Scene(String name, Story story, List<String> dialogues, String dialogueSound, List<String> pictures, List<Question> questions){
+    public Scene(String name, Story story, List<String> dialogues, List<String> dialogueSounds, List<String> pictures, List<Question> questions){
         this.name = name;
         this.story = story;
         this.dialogues = dialogues;
-        this.dialogueSound = dialogueSound;
+        this.dialogueSounds = dialogueSounds;
         this.pictures = pictures;
         this.questions = questions;
     }
 
     // intro and conclusion scenes include no questions
-    public Scene(String name, Story story, List<String> dialogues, String dialogueSound, List<String> pictures){
-        this(name, story, dialogues, dialogueSound, pictures, null);
+    public Scene(String name, Story story, List<String> dialogues, List<String> dialogueSounds, List<String> pictures){
+        this(name, story, dialogues, dialogueSounds, pictures, null);
     }
 }
