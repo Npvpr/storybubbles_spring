@@ -441,7 +441,7 @@ public class DbInit {
 
                 // Story 1
                 Story story1 = storyRepository.save(new Story(1L, "The Forest", "/sounds/story1/titleSound.mp3",
-                                "/sounds/story1/bgMusic.mp3"));
+                                "https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/bgMusic.mp3"));
 
                 sceneRepository.save(new Scene("Milo's Adventure", story1, List.of(
                                 "Milo, the friendly boy, lived in a colorful forest filled with magical creatures.",
@@ -472,23 +472,29 @@ public class DbInit {
                                                                                                                 "North")),
                                                                                 choiceRepository.save(
                                                                                                 new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/east.gif",
-                                                                                                "East")),
+                                                                                                                "East")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/south.gif","South")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/south.gif",
+                                                                                                                "South")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/west.gif","West"))),
-                                                                2)),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/west.gif",
+                                                                                                                "West"))),
+                                                                1)),
                                                 questionRepository.save(new Question("What’s something with leaves?",
                                                                 List.of(
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/river+flow.gif","River")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/river+flow.gif",
+                                                                                                                "River")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/cave.gif","Cave")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/cave.gif",
+                                                                                                                "Cave")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/house.gif","House")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/house.gif",
+                                                                                                                "House")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/tree.gif","Tree"))),
-                                                                4)))));
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/tree.gif",
+                                                                                                                "Tree"))),
+                                                                3)))));
 
                 sceneRepository.save(new Scene(
                                 "The Talking Tree",
@@ -504,25 +510,33 @@ public class DbInit {
                                                                 "I’m yellow and I peel, you can eat me as a snack. I grow on a tall, green plant. What am I?",
                                                                 List.of(
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/banana.gif","Banana")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/banana.gif",
+                                                                                                                "Banana")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/apple.gif","Apple")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/apple.gif",
+                                                                                                                "Apple")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/leaf.gif","Leaf")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/leaf.gif",
+                                                                                                                "Leaf")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/stick.gif","Stick"))),
-                                                                1)),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/stick.gif",
+                                                                                                                "Stick"))),
+                                                                0)),
                                                 questionRepository.save(new Question(
                                                                 "I grow on trees, but I’m not a leaf. What am I?",
                                                                 List.of(
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/fruit.gif","Fruit")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/rock.gif",
+                                                                                                                "Rock")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/rock.gif","Rock")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/fruit.gif",
+                                                                                                                "Fruit")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/feather.gif","Feather")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/feather.gif",
+                                                                                                                "Feather")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/water.gif","Water"))),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/water.gif",
+                                                                                                                "Water"))),
                                                                 1)))));
 
                 sceneRepository.save(new Scene(
@@ -539,26 +553,35 @@ public class DbInit {
                                                                 "What does the river do with the stream? It rhymes with 'row'.",
                                                                 List.of(
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/river+flow.gif","Flow")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/flood.gif",
+                                                                                                                "Flood")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/flood.gif","Flood")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/float.gif",
+                                                                                                                "Float")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/float.gif","Float")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/river+flow.gif",
+                                                                                                                "Flow")),
+
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/fly.gif","Fly"))),
-                                                                1)),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/fly.gif",
+                                                                                                                "Fly"))),
+                                                                2)),
                                                 questionRepository.save(new Question(
                                                                 "How did the book travel through the river stream? It rhymes with 'boat'.",
                                                                 List.of(
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/float.gif","Float")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/float.gif",
+                                                                                                                "Float")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/flood.gif","Flood")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/flood.gif",
+                                                                                                                "Flood")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/fly.gif","Fly")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/fly.gif",
+                                                                                                                "Fly")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/flower.gif","Flower"))),
-                                                                1)))));
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/flower.gif",
+                                                                                                                "Flower"))),
+                                                                0)))));
 
                 sceneRepository.save(new Scene(
                                 "The Hidden Cave",
@@ -576,26 +599,34 @@ public class DbInit {
                                                                 "Where do kings and knights live?",
                                                                 List.of(
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/castle.gif","Castle")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/river+flow.gif",
+                                                                                                                "River")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/river+flow.gif","River")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/forest.gif",
+                                                                                                                "Forest")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/forest.gif","Forest")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/cave.gif",
+                                                                                                                "Cave")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/cave.gif","Cave"))),
-                                                                1)),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/castle.gif",
+                                                                                                                "Castle"))),
+                                                                3)),
                                                 questionRepository.save(new Question(
                                                                 "Which weapons do kings and knights use to fight?",
                                                                 List.of(
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/sword.gif","Sword")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/sword.gif",
+                                                                                                                "Sword")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/spoon.gif","Spoon")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/spoon.gif",
+                                                                                                                "Spoon")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/rope.gif","Rope")),
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/rope.gif",
+                                                                                                                "Rope")),
                                                                                 choiceRepository.save(
-                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/torch.gif","Torch"))),
-                                                                1)))));
+                                                                                                new Choice("https://s3.eu-west-2.amazonaws.com/nlm.aws.storybubbles/Story+1/torch.gif",
+                                                                                                                "Torch"))),
+                                                                0)))));
 
                 sceneRepository.save(new Scene(
                                 "The Magic of Words",

@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Test {
     @Id
-    private long id;
+    private Long id;
 
     // Cannot make ManyToOne from Question because not all questions are part of a
     // test, some are part of the scenes

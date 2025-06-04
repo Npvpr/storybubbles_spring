@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 public class Story {
 
   @Id
-  private long id;
+  private Long id;
 
   private String name;
 

@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class Choice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     private String emoji;
     private String label;
