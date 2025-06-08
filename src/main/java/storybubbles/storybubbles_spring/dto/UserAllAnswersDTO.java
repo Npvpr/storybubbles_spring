@@ -5,11 +5,12 @@ import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
+import storybubbles.storybubbles_spring.model.User;
 
 @Getter
 @AllArgsConstructor
 public class UserAllAnswersDTO {
+    private User user;
     // this will also allow dynamic number of tests
     private List<List<HashMap<String, String>>> userTests;
     // this way number of stories can be dynamic

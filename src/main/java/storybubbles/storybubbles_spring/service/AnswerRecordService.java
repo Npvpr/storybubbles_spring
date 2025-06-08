@@ -136,7 +136,7 @@ public class AnswerRecordService {
                 textHashMap.put("userAnswerText", "Not Answered");
             } else {
                 userAnswerIndex = answerRecord.getChosenAnswer();
-                textHashMap.put("userAnswerText", question.getChoices().get(userAnswerIndex).getLabel());
+                textHashMap.put("userAnswerText", Integer.toString(userAnswerIndex+1));
             }
 
             testAnswers.add(textHashMap);
@@ -168,7 +168,7 @@ public class AnswerRecordService {
                 totalCorrectCount.addAndGet(storyAnswersDTO.getCorrectCount());
             });
 
-            allUsers.add(new UserAllAnswersDTO(userTests, userStories, totalCorrectCount.get()));
+            allUsers.add(new UserAllAnswersDTO(user, userTests, userStories, totalCorrectCount.get()));
         });
 
         return allUsers;
