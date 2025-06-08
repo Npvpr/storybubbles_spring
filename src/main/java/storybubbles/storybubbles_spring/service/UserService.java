@@ -1,8 +1,10 @@
 package storybubbles.storybubbles_spring.service;
 
+import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.crossstore.ChangeSetPersister.NotFoundException;
 import org.springframework.stereotype.Service;
 
 import storybubbles.storybubbles_spring.dto.CreateUserRequest;
@@ -32,8 +34,12 @@ public class UserService {
         );
     }
 
-    public User getUserById(UUID userId){
+    public User getUserById(UUID userId) throws Exception{
         return userRepository.findById(userId)
-        .orElseThrow(() -> new IllegalArgumentException("User not found with ID: " + userId));
+        .orElseThrow(() -> new NotFoundException());
+    }
+
+    public List<User> getAllUsers(){
+        return userRepository.findAll();
     }
 }

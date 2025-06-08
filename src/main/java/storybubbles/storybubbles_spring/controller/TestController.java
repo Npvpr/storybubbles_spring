@@ -16,7 +16,7 @@ public class TestController {
     private TestService testService;
 
     @GetMapping
-    public Test getTest(@RequestParam long testId){
-        return testService.getTest(testId);
+    public Test getTestById(@RequestParam long testId){
+        return testService.getTestById(testId);
     } 
 }

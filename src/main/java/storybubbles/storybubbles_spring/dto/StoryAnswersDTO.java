@@ -8,7 +8,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class StoryAnswersResponse {
+public class StoryAnswersDTO {
     private List<HashMap<String, String>> answersList;
     private int correctCount;
 }

@@ -3,18 +3,16 @@ package storybubbles.storybubbles_spring.service;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import jakarta.persistence.EntityNotFoundException;
-import storybubbles.storybubbles_spring.dto.StoryAnswersRequest;
-import storybubbles.storybubbles_spring.dto.StoryAnswersResponse;
+import storybubbles.storybubbles_spring.dto.StoryAnswersDTO;
 import storybubbles.storybubbles_spring.dto.StoryWithScenesResponse;
 import storybubbles.storybubbles_spring.dto.TestAnswersDto;
+import storybubbles.storybubbles_spring.dto.UserAllAnswersDTO;
 import storybubbles.storybubbles_spring.model.*;
 import storybubbles.storybubbles_spring.repository.AnswerRecordRepository;
 
@@ -28,6 +26,9 @@ public class AnswerRecordService {
 
     @Autowired
     private StoryService storyService;
+
+    @Autowired
+    private TestService testService;
 
     // creating answer with user that got from the client/frontend is not a good
     // idea
@@ -51,10 +52,9 @@ public class AnswerRecordService {
                 .orElse(null);
     }
 
-    public StoryAnswersResponse countStoryAnswers(StoryAnswersRequest storyAnswersRequest) {
-        Long storyId = storyAnswersRequest.getStoryId();
+    public StoryAnswersDTO getStoryAnswers(UUID userId, Long storyId) {
+
         StoryWithScenesResponse storyWithScenes = storyService.getStoryWithScenesById(storyId);
-        UUID userId = storyAnswersRequest.getUserId();
 
         List<HashMap<String, String>> storyAnswersList = new ArrayList<>();
         // AtomicInteger workaround for Java Lambda's Effectively Final rule
@@ -114,6 +114,63 @@ public class AnswerRecordService {
                 });
             }
         });
-        return new StoryAnswersResponse(storyAnswersList, correctCount.get());
+        return new StoryAnswersDTO(storyAnswersList, correctCount.get());
+    }
+
+    // what if user doesn't exist?
+    // what if test doesn't exist?
+    public List<HashMap<String, String>> getTestAnswers(UUID userId, Long testId) {
+        List<HashMap<String, String>> testAnswers = new ArrayList<>();
+
+        Test test = testService.getTestById(testId);
+        test.getQuestions().forEach((question) -> {
+            HashMap<String, String> textHashMap = new HashMap<>();
+
+            textHashMap.put("questionText", question.getQuestionText());
+
+            int userAnswerIndex = -1;
+            AnswerRecord answerRecord = getAnswerRecordByUserIdQuestionID(userId, question.getId());
+
+            if (answerRecord == null) {
+                // user not answered yet
+                textHashMap.put("userAnswerText", "Not Answered");
+            } else {
+                userAnswerIndex = answerRecord.getChosenAnswer();
+                textHashMap.put("userAnswerText", question.getChoices().get(userAnswerIndex).getLabel());
+            }
+
+            testAnswers.add(textHashMap);
+
+        });
+
+        return testAnswers;
+    }
+
+    public List<UserAllAnswersDTO> getAllAnswers() {
+
+        List<UserAllAnswersDTO> allUsers = new ArrayList<>();
+
+        userService.getAllUsers().forEach((user) -> {
+            UUID userId = user.getId();
+            AtomicInteger totalCorrectCount = new AtomicInteger(0);
+
+            List<List<HashMap<String, String>>> userTests = new ArrayList<>();
+
+            testService.getAllTests().forEach((test) -> {
+                userTests.add(getTestAnswers(userId, test.getId()));
+            });
+
+            List<StoryAnswersDTO> userStories = new ArrayList<>();
+
+            storyService.getAllStories().forEach((story) -> {
+                StoryAnswersDTO storyAnswersDTO = getStoryAnswers(userId, story.getId());
+                userStories.add(storyAnswersDTO);
+                totalCorrectCount.addAndGet(storyAnswersDTO.getCorrectCount());
+            });
+
+            allUsers.add(new UserAllAnswersDTO(userTests, userStories, totalCorrectCount.get()));
+        });
+
+        return allUsers;
     }
 }

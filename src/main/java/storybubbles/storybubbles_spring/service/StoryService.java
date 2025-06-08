@@ -25,4 +25,8 @@ public class StoryService {
 
     return new StoryWithScenesResponse(story, scenes);
   }
+
+  public List<Story> getAllStories(){
+    return storyRepository.findAll();
+  }
 }
