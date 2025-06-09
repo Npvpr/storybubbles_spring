@@ -50,191 +50,191 @@ public class DbInit {
                                 "How much fun did you have playing the game?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f614/512.gif",
-                                                                "Not fun at all")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
+                                                                "Strongly Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f611/512.gif",
-                                                                "A little fun")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif",
-                                                                "Somewhat fun")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
-                                                                "Fun")),
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
-                                                                "Very fun"))))));
+                                                                "Strongly Agree"))))));
 
                 preTestQuestions.add(questionRepository.save(new Question(
                                 "How interested were you in the story of the game?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f634/512.gif",
-                                                                "Not interested at all")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
+                                                                "Strongly Disagree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
-                                                                "A little interested")),
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f914/512.gif",
-                                                                "Somewhat interested")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60d/512.gif",
-                                                                "Interested")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f632/512.gif",
-                                                                "Very interested"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 preTestQuestions.add(questionRepository.save(new Question(
                                 "How motivated were you to keep playing the game?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f62b/512.gif",
-                                                                "Not motivated at all")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
+                                                                "Strongly Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60c/512.gif",
-                                                                "A little motivated")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60f/512.gif",
-                                                                "Somewhat motivated")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60e/512.gif",
-                                                                "Motivated")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f4aa/512.gif",
-                                                                "Very motivated"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 preTestQuestions.add(questionRepository.save(new Question(
                                 "Did you feel proud when you completed a level or challenge?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f614/512.gif",
-                                                                "Not proud at all")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
+                                                                "Strongly Disagree")),
+                                                choiceRepository.save(new Choice(
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
-                                                                "A little proud")),
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif",
-                                                                "Somewhat proud")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f601/512.gif",
-                                                                "Proud")),
-                                                choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60e/512.gif",
-                                                                "Very proud"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 preTestQuestions.add(questionRepository.save(new Question(
                                 "Was the game too easy, too hard, or just right for you?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f613/512.gif",
-                                                                "Too easy")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
+                                                                "Strongly Disagree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
-                                                                "A little too easy")),
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60c/512.gif",
-                                                                "Just right")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f624/512.gif",
-                                                                "A little too hard")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f629/512.gif",
-                                                                "Too hard"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 preTestQuestions.add(questionRepository.save(new Question(
                                 "How good did you feel after finishing a tough task or puzzle?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f614/512.gif",
-                                                                "Not good at all")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
+                                                                "Strongly Disagree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
-                                                                "A little good")),
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif",
-                                                                "Somewhat good")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
-                                                                "Good")),
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.gif",
-                                                                "Very good"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 preTestQuestions.add(questionRepository.save(new Question(
                                 "Did you learn something new while playing the game?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
+                                                                "Strongly Disagree")),
+                                                choiceRepository.save(new Choice(
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
+                                                                "Disagree")),
+                                                choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
-                                                                "Not at all")),
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif",
-                                                                "A little")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f914/512.gif",
-                                                                "Somewhat")),
-                                                choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.gif",
-                                                                "Yes")),
-                                                choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.gif",
-                                                                "A lot"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 preTestQuestions.add(questionRepository.save(new Question(
                                 "Would you want to play this game again?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
-                                                                "Not at all")),
+                                                                "Strongly Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f914/512.gif",
-                                                                "Maybe a little")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
-                                                                "I don’t know")),
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif",
-                                                                "Yes")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60d/512.gif",
-                                                                "Definitely"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 preTestQuestions.add(questionRepository.save(new Question(
                                 "How much did you like the characters in the game?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
-                                                                "Didn’t like them at all")),
+                                                                "Strongly Disagree")),
+                                                choiceRepository.save(new Choice(
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
-                                                                "Liked them a little")),
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif",
-                                                                "Liked them somewhat")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f603/512.gif",
-                                                                "Liked them")),
-                                                choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/512.gif",
-                                                                "Loved them"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 preTestQuestions.add(questionRepository.save(new Question(
                                 "Did getting rewards (like points or new levels) make you want to keep playing?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
-                                                                "Not at all")),
+                                                                "Strongly Disagree")),
+                                                choiceRepository.save(new Choice(
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
-                                                                "A little bit")),
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif",
-                                                                "Somewhat")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f603/512.gif",
-                                                                "Yes")),
-                                                choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f389/512.gif",
-                                                                "Definitely"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 Test preTest = new Test(
                                 1L,
@@ -248,191 +248,191 @@ public class DbInit {
                                 "How much fun did you have playing the game?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f614/512.gif",
-                                                                "Not fun at all")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
+                                                                "Strongly Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f611/512.gif",
-                                                                "A little fun")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif",
-                                                                "Somewhat fun")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
-                                                                "Fun")),
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
-                                                                "Very fun"))))));
+                                                                "Strongly Agree"))))));
 
                 postTestQuestions.add(questionRepository.save(new Question(
                                 "How interested were you in the story of the game?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f634/512.gif",
-                                                                "Not interested at all")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
+                                                                "Strongly Disagree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
-                                                                "A little interested")),
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f914/512.gif",
-                                                                "Somewhat interested")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60d/512.gif",
-                                                                "Interested")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f632/512.gif",
-                                                                "Very interested"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 postTestQuestions.add(questionRepository.save(new Question(
                                 "How motivated were you to keep playing the game?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f62b/512.gif",
-                                                                "Not motivated at all")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
+                                                                "Strongly Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60c/512.gif",
-                                                                "A little motivated")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60f/512.gif",
-                                                                "Somewhat motivated")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60e/512.gif",
-                                                                "Motivated")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f4aa/512.gif",
-                                                                "Very motivated"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 postTestQuestions.add(questionRepository.save(new Question(
                                 "Did you feel proud when you completed a level or challenge?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f614/512.gif",
-                                                                "Not proud at all")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
+                                                                "Strongly Disagree")),
+                                                choiceRepository.save(new Choice(
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
-                                                                "A little proud")),
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif",
-                                                                "Somewhat proud")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f601/512.gif",
-                                                                "Proud")),
-                                                choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60e/512.gif",
-                                                                "Very proud"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 postTestQuestions.add(questionRepository.save(new Question(
                                 "Was the game too easy, too hard, or just right for you?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f613/512.gif",
-                                                                "Too easy")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
+                                                                "Strongly Disagree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
-                                                                "A little too easy")),
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60c/512.gif",
-                                                                "Just right")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f624/512.gif",
-                                                                "A little too hard")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f629/512.gif",
-                                                                "Too hard"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 postTestQuestions.add(questionRepository.save(new Question(
                                 "How good did you feel after finishing a tough task or puzzle?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f614/512.gif",
-                                                                "Not good at all")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
+                                                                "Strongly Disagree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
-                                                                "A little good")),
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif",
-                                                                "Somewhat good")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
-                                                                "Good")),
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.gif",
-                                                                "Very good"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 postTestQuestions.add(questionRepository.save(new Question(
                                 "Did you learn something new while playing the game?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
+                                                                "Strongly Disagree")),
+                                                choiceRepository.save(new Choice(
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
+                                                                "Disagree")),
+                                                choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
-                                                                "Not at all")),
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif",
-                                                                "A little")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f914/512.gif",
-                                                                "Somewhat")),
-                                                choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.gif",
-                                                                "Yes")),
-                                                choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.gif",
-                                                                "A lot"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 postTestQuestions.add(questionRepository.save(new Question(
                                 "Would you want to play this game again?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
-                                                                "Not at all")),
+                                                                "Strongly Disagree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f914/512.gif",
-                                                                "Maybe a little")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
-                                                                "I don’t know")),
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif",
-                                                                "Yes")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f60d/512.gif",
-                                                                "Definitely"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 postTestQuestions.add(questionRepository.save(new Question(
                                 "How much did you like the characters in the game?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
-                                                                "Didn’t like them at all")),
+                                                                "Strongly Disagree")),
+                                                choiceRepository.save(new Choice(
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
-                                                                "Liked them a little")),
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif",
-                                                                "Liked them somewhat")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f603/512.gif",
-                                                                "Liked them")),
-                                                choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/512.gif",
-                                                                "Loved them"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 postTestQuestions.add(questionRepository.save(new Question(
                                 "Did getting rewards (like points or new levels) make you want to keep playing?",
                                 List.of(
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif",
-                                                                "Not at all")),
+                                                                "Strongly Disagree")),
+                                                choiceRepository.save(new Choice(
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f615/512.gif",
+                                                                "Disagree")),
                                                 choiceRepository.save(new Choice(
                                                                 "https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif",
-                                                                "A little bit")),
+                                                                "Neutral")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif",
-                                                                "Somewhat")),
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f604/512.gif",
+                                                                "Agree")),
                                                 choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f603/512.gif",
-                                                                "Yes")),
-                                                choiceRepository.save(new Choice(
-                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f389/512.gif",
-                                                                "Definitely"))))));
+                                                                "https://fonts.gstatic.com/s/e/notoemoji/latest/1f929/512.gif",
+                                                                "Strongly Agree"))))));
 
                 Test postTest = new Test(
                                 2L,
